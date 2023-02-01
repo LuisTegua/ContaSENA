@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto SENA</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="name-page">ContaSENA</h1>
+      <ul class="header-nav">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./index.html">Contacto</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./contact.html">Contactos</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Ciudad</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="section contact">
+        <h2 class="section__title">Contactenos</h2>
+        <p class="contact__border"></p>
+        <form class="contact-form" autocomplete="on">
+          <label class="contact-form__label" for="name">Nombre:</label>
+          <input class="contact-form__input" type="text" id="name" required />
+          <ul class="contact-form--screen">
+            <li class="item">
+              <label class="contact-form__label" for="address"
+                >Direccion:</label
+              >
+              <input
+                class="contact-form__input screen"
+                type="text"
+                id="address"
+              />
+            </li>
+            <li class="item">
+              <label class="contact-form__label" for="city">Cuidad:</label>
+              <select class="contact-form__input screen" name="city" id="city">
+                <option value="cajica">Cajicá</option>
+              </select>
+            </li>
+            <li class="item">
+              <label class="contact-form__label" for="tel">Teléfono:</label>
+              <input
+                class="contact-form__input screen"
+                type="tel"
+                id="tel"
+                required
+              />
+            </li>
+            <li class="item">
+              <label class="contact-form__label" for="mail">E-mail:</label>
+              <input
+                class="contact-form__input screen"
+                type="email"
+                id="mail"
+              />
+            </li>
+          </ul>
+          <label class="contact-form__label" for="des">Asunto:</label>
+          <input class="contact-form__input" type="text" id="des" />
+          <label class="contact-form__label" for="message">Mensaje:</label>
+          <textarea
+            class="contact-form__input"
+            name="mensaje"
+            id="message"
+            required
+          ></textarea>
+          <button class="btn contact-form__btn" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>SENA CDA Chía &copy; 2022</p>
+      <p>Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
